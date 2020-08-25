@@ -1,0 +1,161 @@
+/* pages/shoppingCart/shoppingCart.wxss */
+@import '/css/global.wxss';
+@import '/css/iconfont.wxss';
+page {
+  padding-bottom: 170rpx;
+  background: #eee;
+}
+
+.carBox {
+  padding: 30rpx 20rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.leftBox {
+  flex: 0 0 220rpx;
+  margin-right:20rpx;
+}
+
+.leftBox .flexWrap {
+  justify-content: center;
+  align-items: center;
+}
+
+.CheckBox {
+  flex: 0 0 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.CheckBox image {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+}
+
+.leftBox .proImg {
+  width: 160rpx;
+  height: 160rpx;
+  box-sizing: border-box;
+  border: 2rpx solid #eee;
+}
+.textView{
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 26rpx;
+}
+.textView .title{
+  font-size: 30rpx;
+  line-height: 42rpx;
+  padding-bottom:16rpx;
+}
+.deleteBox{
+  flex:0 0 30rpx;
+  margin-left:45rpx;
+}
+.invalidTxt{
+  flex:0 0 68rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  margin-left:7rpx;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+  background: #CBCDD5;
+}
+.specsTxt{
+  color:#999;
+  font-size: 24rpx;
+  line-height: 34rpx;
+}
+.priceBox .price{
+  justify-content: center;
+  align-items: center;
+  padding-left:0;
+}
+.skuQuantity .num,.skuQuantity .btn-minus,.skuQuantity .btn-plus{
+  border-color: #949496;
+  color: #949496;
+}
+.skuQuantity .disable{
+  border:1rpx solid #C4C4C4;
+  color: #C4C4C4;
+}
+.skuQuantity .btn-minus{
+  border-radius:6rpx 0 0 6rpx;
+}
+.skuQuantity .btn-minus.disable{
+  border-right:none;
+}
+.skuQuantity .btn-plus{
+  border-radius: 0 6rpx 6rpx 0;
+}
+.skuQuantity .btn-plus.disable{
+  border-left:none;
+}
+.skuQuantity .tips{
+  padding-top:10rpx;
+  font-size: 22rpx;
+  line-height: 34rpx;
+  text-align: center;
+}
+.carBox .discount{
+  padding:20rpx 0 0 80rpx;
+  line-height: 36rpx;
+}
+.heading{
+  height: 42rpx;
+  padding:20rpx;
+}
+.heading .title{
+  font-size: 30rpx;
+  color: #1D1D24;
+}
+.function{
+  display: flex;
+  justify-content: flex-end;
+}
+.function .gray{
+  margin:0 10rpx 0 20rpx;
+}
+.invalid .proImg{
+  opacity: 0.6;
+}
+.invalidTips{
+  color: #949496;
+  font-size: 24rpx;
+}
+
+.footerLeft{
+  flex:0 0 120rpx;
+  padding:30rpx 0 0 20rpx;
+  line-height: 40rpx;
+}
+.footerLeft .CheckBox{
+  float: left;
+}
+.footerRight{
+  text-align: right;
+}
+.footerRight .total{
+  font-size: 30rpx;
+  color: #1D1D24;
+}
+.footerRight .money{
+  padding:0 10rpx;
+  font-size: 30rpx;
+  color: #E57175;
+}
+.footerRight .settlementBtn{
+  display: inline-flex;
+  width: 240rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  background: #E57175;
+  font-size: 30rpx;
+  color: #fff;
+  justify-content: center;
+}
+.footerRight .settlementBtn .num{
+  font-size: 24rpx;
+}

@@ -1,0 +1,186 @@
+<!--index.wxml-->
+<view class="container">
+	<!-- tabs -->
+	<scroll-view scroll-x class='swiper-nav' scroll-left='{{swiperNav.x}}' scroll-with-animation='true' bindtap='swiperNav'>
+		　<text wx:for='{{swiperNav.arr}}' wx:key='index' class='item-nav {{swiperNav.i==index ? "active" : ""}}' data-i='{{index}}'>{{item.txt}}</text>
+	</scroll-view>
+	<!--// tabs -->
+	<!-- tabs_content -->
+	<view class="tabs_content">
+		<view class="topBox">
+			<text class="topTips">10位朋友买过</text>
+			<!-- video -->
+			<view class="section tc">
+				<video id="myVideo" object-fit="cover" src="https://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu controls></video>
+			</view>
+			<!-- //video -->
+		</view>
+		<!-- textBox -->
+		<view class="textBox">
+			<view class="productName">AQMW 柔光缎采蜜粉</view>
+			<view class="slogan">一瞬间，肌理的惟美改变。</view>
+			<view class="priceBox">
+				<image class="vip" mode="widthFix" src="../../images/vipicon.png"></image><text class="price">￥380.00</text><text class="originalPrice">￥540.00</text>
+			</view>
+		</view>
+		<!-- //textBox -->
+		<!-- btns -->
+		<view class="btnBox">
+			<view class="btnDefault" bindtap="toDetail">商品详情</view>
+			<view class="btnDefault blackBtn">加入购物车</view>
+		</view>
+		<!-- //btns -->
+		<!-- productListBox -->
+		<view class="CommonProductListBox">
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<view class="videoImg">
+						<image mode="widthFix" src="../../images/video.png"></image>
+					</view>
+					<image mode="widthFix" src="../../images/chanpin8.jpg"></image>
+					<view class="bought"><text>299个朋友买过</text></view>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">欧舒丹乳木果护手霜</view>
+					<view class="centre"><text class="price">￥1,600.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<image mode="widthFix" src="../../images/chanpin9.jpg"></image>
+					<view class="bought"><text>299个朋友买过</text></view>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">Annasui独角兽筑梦天马淡香水</view>
+					<view class="centre"><text class="price">￥8,600.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<view class="videoImg">
+						<image mode="widthFix" src="../../images/video.png"></image>
+					</view>
+					<image mode="widthFix" src="../../images/chanpin10.jpg"></image>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">Hermes爱马仕大地男士淡香水</view>
+					<view class="centre"><text class="price">￥2,000.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+		</view>
+		<!-- //productListBox -->
+		<!-- indexBanner -->
+		<view class="indexBanner">
+			<view class="mask"></view>
+			<text class="text">大牌直降</text>
+			<image mode="aspectFill" src="../../images/cp1.jpg"></image>
+		</view>
+		<!-- indexBanner -->
+		<!-- productListBox -->
+		<view class="CommonProductListBox two">
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<view class="videoImg">
+						<image mode="widthFix" src="../../images/video.png"></image>
+					</view>
+					<image mode="widthFix" src="../../images/chanpin8.jpg"></image>
+					<view class="bought"><text>299个朋友买过</text></view>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">欧舒丹乳木果护手霜</view>
+					<view class="centre"><text class="price">￥1,600.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<image mode="widthFix" src="../../images/chanpin9.jpg"></image>
+					<view class="bought"><text>299个朋友买过</text></view>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">Annasui独角兽筑梦天马淡香水</view>
+					<view class="centre"><text class="price">￥8,600.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+		</view>
+		<!-- //productListBox -->
+		<!-- productListBox -->
+		<view class="CommonProductListBox two">
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<view class="videoImg">
+						<image mode="widthFix" src="../../images/video.png"></image>
+					</view>
+					<image mode="widthFix" src="../../images/chanpin8.jpg"></image>
+					<view class="bought"><text>299个朋友买过</text></view>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">欧舒丹乳木果护手霜</view>
+					<view class="centre"><text class="price">￥1,600.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+			<!-- productList -->
+			<view class="CommonProductList">
+				<view class="imgBox" bindtap="toDetail">
+					<image mode="widthFix" src="../../images/chanpin9.jpg"></image>
+					<view class="bought"><text>299个朋友买过</text></view>
+				</view>
+				<view class="productInfo">
+					<view class="title" bindtap="toDetail">Annasui独角兽筑梦天马淡香水</view>
+					<view class="centre"><text class="price">￥8,600.00</text>
+						<image class="V" mode="widthFix" src="../../images/gvip.png"></image>
+					</view>
+					<view class="listBottom"><text class="originalPrice">￥2,240.00</text>
+						<view class="iconfont icongouwuche"></view>
+					</view>
+				</view>
+			</view>
+			<!-- //productList -->
+		</view>
+		<!-- //productListBox -->
+	</view>
+	<!-- //tabs_content -->
+
+
+</view>

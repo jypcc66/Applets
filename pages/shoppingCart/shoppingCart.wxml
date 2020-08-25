@@ -1,0 +1,119 @@
+<!--pages/shoppingCart/shoppingCart.wxml-->
+<view class="container">
+	<view class="whiteBg">
+		<!-- carBox -->
+		<view class="carBox" wx:for="{{list}}" wx:key="index">
+			<view class="flexWrap">
+				<!-- left -->
+				<view class="flexFlow leftBox">
+					<view class="flexWrap">
+						<view class="flexFlow CheckBox">
+							<image wx:if="{{item.checkbox}}" mode="widthFix" src="../../images/selectCheckBox.png"></image>
+							<image wx:else mode="widthFix" src="../../images/CheckBox.png"></image>
+						</view>
+						<view class="flexFlow">
+							<image class="proImg" mode="widthFix" src="{{item.pic}}"></image>
+						</view>
+					</view>
+				</view>
+				<!-- //left -->
+				<!-- right -->
+				<view class="flexFlow">
+					<!-- top -->
+					<view class="flexWrap textView">
+						<view class="flexFlow">
+							<view class="title">{{item.title}}</view>
+							<view class="specsTxt">{{item.specs}}</view>
+						</view>
+						<view class="flexFlow deleteBox"><text class="iconfont iconshanchu"></text></view>
+					</view>
+					<!-- top -->
+					<!-- down -->
+					<view class="flexWrap priceBox">
+						<view class="flexFlow price red">￥{{item.price}}</view>
+						<view class="flexFlow skuQuantity">
+							<view class="flexWrap">
+								<text class="operator btn-minus {{item.count > 1 ? '' : 'disable'}}" bindtap="minusClick" data-index="{{item.id}}" data-count="{{item.count}}">-</text>
+								<input class="num" value="{{item.count}}"></input>
+								<text class="operator btn-plus {{item.count == item.totalCount ? 'disable' : ''}}" data-count="{{item.count}}" data-totalcount="{{item.totalCount}}" bindtap="plusClick" data-index="{{item.id}}">+</text>
+							</view>
+							<view class="red tips" wx:if="{{item.totalCount < 5 }}">库存不足</view>
+						</view>
+					</view>
+					<!-- //down -->
+				</view>
+				<!-- //right -->
+			</view>
+			<!-- 优惠券 -->
+			<view class="discount" wx:if="{{item.coupon}}">优惠券：满300减30，满200减15</view>
+			<!-- //优惠券 -->
+		</view>
+		<!-- //carBox -->
+	</view>
+	<view class="whiteBg marginT20">
+		<!-- top -->
+		<view class="flexWrap heading">
+			<view class="flexFlow title">失效商品</view>
+			<view class="flexFlow function">
+				<text class="gray">移至收藏夹</text><text class="gray">清空失效宝贝</text>
+			</view>
+		</view>
+		<!-- //top -->
+		<!-- carBox -->
+		<view class="carBox">
+			<view class="flexWrap">
+				<!-- left -->
+				<view class="flexFlow leftBox">
+					<view class="flexWrap">
+						<view class="flexFlow CheckBox">
+						</view>
+						<view class="flexFlow invalid">
+							<image class="proImg" mode="widthFix" src="../../images/chanpin4.jpg"></image>
+						</view>
+					</view>
+				</view>
+				<!-- //left -->
+				<!-- right -->
+				<view class="flexFlow">
+					<!-- top -->
+					<view class="flexWrap textView">
+						<view class="flexFlow">
+							<view class="title">wet n wild湿又野哑光口红女小细管滋润持久不脱…</view>
+						</view>
+						<view class="flexFlow invalidTxt">失效</view>
+					</view>
+					<!-- top -->
+					<!-- down -->
+					<view class="flexWrap priceBox">
+						<view class="flexFlow invalidTips">商品库存不足</view>
+					</view>
+					<!-- //down -->
+				</view>
+				<!-- //right -->
+			</view>
+		</view>
+		<!-- //carBox -->
+	</view>
+	<!-- footer -->
+	<view class="footerBox whiteBg">
+		<view class="flexWrap">
+			<!-- left -->
+			<view class="flexFlow footerLeft">
+				<view class="flexFlow CheckBox">
+					<image mode="widthFix" src="../../images/CheckBox.png"></image>
+				</view>
+				<view class="flexFlow">
+					全选
+				</view>
+			</view>
+			<!-- //left -->
+			<!-- right -->
+			<view class="flexFlow footerRight">
+				<text class="total">合计:</text><text class="money">￥150</text>
+				<view class="settlementBtn">去结算<text class="num">(1件)</text></view>
+			</view>
+			<!-- //right -->
+		</view>
+	</view>
+	<!-- //footer -->
+</view>

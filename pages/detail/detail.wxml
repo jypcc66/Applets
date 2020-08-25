@@ -1,0 +1,219 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+	<!-- swiper -->
+	<view class="page-section">
+		<text class="topTips">10位朋友买过</text>
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+			<swiper-item>
+				<image src="../../images/chanpin3.jpg"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../images/chanpin11.jpg"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../images/cp3.jpg"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<!-- //swiper -->
+	<!-- detailInfo -->
+	<view class="whiteBg detailInfo">
+		<!-- priceBox -->
+		<view class="priceBox">
+			<text class="price detailPrice">￥69.00-129.00</text>
+			<image class="vip" mode="widthFix" src="../../images/vipicon.png"></image>
+			<view class="originalPrice detailOriginalPrice">￥99.00-159.00</view>
+		</view>
+		<!-- //priceBox -->
+		<view class="flexWrap titleBox">
+			<view class="flexFlow">
+				<view class="titleCh">兰蔻菁纯光采唇膏兰蔻菁纯光采唇膏兰蔻菁纯光采唇膏</view>
+			</view>
+			<view class="flexFlow rightBox">
+				<view class="flexWrap">
+					<view class="flexFlow rightMain">
+						<view class="iconBox"><text class="iconfont iconshoucang"></text></view>
+						<view>收藏</view>
+					</view>
+					<view class="flexFlow rightMain">
+						<view class="iconBox fenXiangBox"><text class="iconfont iconfenxiang"></text></view>
+						<view>分享</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="titleEn">LANCOME ABSOLU ROUGE RUBY CREAM</view>
+		<image mode="widthFix" src="../../images/deljkt.jpg"></image>
+	</view>
+	<!-- //detailInfo -->
+	<!-- shopMain -->
+	<view class="whiteBg marginT20">
+		<view class="shopMain pad20">
+			<image class="logo" mode="widthFix" src="../../images/band.jpg"></image><text>LANCOME</text>
+		</view>
+		<view class="pad20">
+			<text class="gray">保障</text><text class="guarantee">正品保障 · 七天无理由 · 48小时极速退款</text>
+		</view>
+	</view>
+	<!-- //shopMain -->
+	<!-- 选择规格 -->
+	<view class="whiteBg marginT20">
+		<view class="detailCommon pad20 font30">选择规格<text class="gray">></text></view>
+		<view class="flexWrap pad20 deliveryBox">
+			<view class="flexFlow font30">配送费：满￥99包邮<text class="doubt">?</text></view>
+			<view class="flexFlow sales font30">销量：2300.8w</view>
+		</view>
+	</view>
+	<!-- //选择规格 -->
+	<!-- 商品评价 -->
+	<view class="whiteBg marginT20">
+		<view class="detailCommon pad20 font30">商品评价<text class="gray">（998）</text><text class="gray arrow right">></text><text class="gray right">99% 好评</text></view>
+		<view class="reviewBox">
+			<!-- 评论列表 -->
+			<view class="flexWrap evaluateList">
+				<view class="flexFlow portrait">
+					<image mode="widthFix" src="../../images/portrait.jpg"></image>
+				</view>
+				<view class="flexFlow">
+					<view class="flexWrap">
+						<view class="flexFlow gray userName">不是雪丽糍</view>
+						<view class="flexFlow gray right date">2019.10.29</view>
+					</view>
+					<view class="con">评论一行最多24个字，不限制几行字。</view>
+				</view>
+			</view>
+			<!-- 评论列表 -->
+			<!-- 评论列表 -->
+			<view class="flexWrap evaluateList">
+				<view class="flexFlow portrait">
+					<image mode="widthFix" src="../../images/portrait.jpg"></image>
+				</view>
+				<view class="flexFlow">
+					<view class="flexWrap">
+						<view class="flexFlow gray userName">不是雪丽糍</view>
+						<view class="flexFlow gray right date">2019.10.29</view>
+					</view>
+					<view class="con">用了以后皮肤越来越差。我的是敏感肌，这个药妆真的让我失望了，而且价格也有一点贵。</view>
+				</view>
+			</view>
+			<!-- 评论列表 -->
+		</view>
+	</view>
+	<!-- //商品评价 -->
+	<!-- 商品介绍 -->
+	<view class="whiteBg marginT20">
+		<view class="detailCommon pad20 font30">商品介绍</view>
+		<image class="productImg" mode="widthFix" src="../../images/spjs.jpg"></image>
+	</view>
+	<!-- //商品介绍 -->
+	<!-- 支付及配送 -->
+	<view class="whiteBg marginT20">
+		<view class="detailCommon pad20 font30">支付及配送</view>
+		<view class="textBox">
+			<view class="gray">选择支付方式：目前我们提供2种支付方式</view>
+			<view class="gray">1.在线支付</view>
+			<view class="gray">支持支付宝、微信、及目前市场所有主流银行卡的在线支付。请在确认订单后选择相应支付界面进行支付。</view>
+			<view class="gray">2.货到付款</view>
+			<view class="gray">您的贷款将在订单送达后，由送货员直接收取，请在签收后付款，并在送货员在场的情况下开箱验货。(货到付款金额不能超过2万元)</view>
+		</view>
+	</view>
+	<!-- //支付及配送 -->
+	<!-- 退换货规定 -->
+	<view class="whiteBg marginT20">
+		<view class="detailCommon pad20 font30">退换货规定</view>
+		<view class="textBox">
+			<view class="gray">1.我不接受包装盒已被开封的商品的退换货(商品包装盒上的透明封装胶纸已被撕开同样视为开封)，请您见谅！</view>
+			<view class="gray">2.所有未开封的商品如需退换请于签收日算起14日内办理，退货收到并确认无误后于一周内办理退款。</view>
+			<view class="gray">3.如您需整单退换，请您务必将当次订单中所有商品(包括免费赠品、包装礼盒)全部退回。</view>
+			<view class="gray">4.因顾客自身原因造成退换货时，由顾客承担商品退回时的邮资和再次发送时的运费。</view>
+		</view>
+	</view>
+	<!-- //退换货规定 -->
+	<!-- 返回顶部 -->
+	<scroll-view scroll-y bindscrolltolower="loadMore" scroll-with-animation="true" bindscroll="onPageScroll">
+		<image class="returnUp" hidden='{{!showTop}}' bindtap="goTop" mode="widthFix" src="../../images/up.png"></image>
+	</scroll-view>
+	<!-- //返回顶部 -->
+	<image class="returnUp" hidden='{{!showTop}}' bindtap="goTop" mode="widthFix" src="../../images/up.png"></image>
+	<!-- footer -->
+	<view class="footerBox flexWrap whiteBg">
+		<view class="flexFlow footerNav">
+			<view class="flexWrap">
+				<view class="flexFlow" bindtap="toHome">
+					<image mode="widthFix" src="../../images/home.png"></image>
+					<text class="gray">首页</text>
+				</view>
+				<view class="flexFlow" bindtap="toCar">
+					<image mode="widthFix" src="../../images/bag.png"></image>
+					<text class="gray">购物车</text>
+				</view>
+				<view class="flexFlow">
+					<image mode="widthFix" src="../../images/service.png"></image>
+					<text class="gray">客服</text>
+				</view>
+			</view>
+		</view>
+		<view class="flexFlow joinCar" bindtap="buyClick">加入购物车</view>
+		<view class="flexFlow buyBtn" bindtap="buyClick">立即购买</view>
+	</view>
+	<!-- //footer -->
+	<view class="mask" wx:if="{{showModal}}" bindtap="closeClick"></view>
+	<!-- 规格弹层 -->
+	<view class="specsLayout whiteBg" wx:if="{{showModal}}">
+		<view class="box">
+			<text class="close" bindtap="closeClick">x</text>
+			<!-- skuPro -->
+			<view class="skuPro skuBox">
+				<view class="flexWrap">
+					<view class="flexFlow layoutImg">
+						<image class="productImg" mode="widthFix" src="../../images/chanpin11.jpg"></image>
+					</view>
+					<view class="flexFlow">
+						<view class="price pb10">￥270.00</view>
+						<view class="pb10 specsTxt">已选：001；2.9g</view>
+						<view class="specsTxt">仅剩2件</view>
+					</view>
+				</view>
+			</view>
+			<!-- //skuPro -->
+			<!-- 色号 -->
+			<view class="skuTit">色号</view>
+			<view class="skuBox specsBox flexWraps">
+				<block wx:for="{{colorList}}" wx:key="id">
+					<view wx:if="{{disable}}" bindtap="colorTabClick" data-index='{{index}}' class="flexFlow1 {{item.disable ? 'disable' : ''}}{{colorIndex == index ? ' active' : ''}}">
+						{{item.color}}
+						<image class="hook" mode="widthFix" src="../../images/hook.png"></image>
+					</view>
+				</block>
+
+			</view>
+			<!-- //色号 -->
+			<!-- 规格 -->
+			<view class="skuTit">规格</view>
+			<view class="skuBox specsBox flexWraps">
+				<block wx:for="{{specsList}}" wx:key="index">
+					<view bindtap="specsTabClick" data-index="{{index}}" class="flexFlow1 {{item.disable ? 'disable' : ''}}{{specsIndex == index ? 'active' : ''}}">{{item.specs}}
+						<image class="hook" mode="widthFix" src="../../images/hook.png"></image>
+					</view>
+				</block>
+			</view>
+			<!-- //规格 -->
+			<!-- 数量 -->
+			<view class="flexWrap skuQuantityBox">
+				<view class="flexFlow">
+					<view class="skuTit">数量</view>
+				</view>
+				<view class="flexFlow skuQuantity">
+					<view class="flexWrap">
+						<text class="operator btn-minus {{count > 1 ? '' : 'disable'}}" bindtap="minusClick" data-count="{{count}}" data-totalcount="{{totalcount}}">-</text>
+						<input class="num" value="{{count}}"></input>
+						<text class="operator btn-plus {{count == totalcount ? 'disable' : ''}}" data-count="{{count}}" data-totalcount="{{totalcount}}" bindtap="plusClick">+</text>
+					</view>
+				</view>
+			</view>
+			<!-- //数量 -->
+		</view>
+		<view class="footerBtn" catchtap="closeClick">确定</view>
+	</view>
+	<!-- //规格弹层 -->
+</view>

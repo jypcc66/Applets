@@ -1,0 +1,333 @@
+/* css/global.wxss */
+view,
+text,
+page {
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-size: 26rpx;
+}
+
+.font30 {
+  font-size: 30rpx;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.whiteBg {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.marginT20 {
+  margin-top: 20rpx;
+}
+
+.pad20 {
+  padding: 20rpx;
+}
+
+.flexWrap {
+  display: flex;
+}
+
+.flexFlow {
+  flex: 1;
+}
+
+.gray {
+  color: #999;
+}
+
+.hide {
+  display: none;
+}
+
+/*返回顶部*/
+.returnUp {
+  position: fixed;
+  bottom: 150rpx;
+  right: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:22rpx 25rpx;
+  width: 40rpx;
+  height: 45rpx;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*topTips*/
+.topTips {
+  position: absolute;
+  top: 40rpx;
+  right: 0;
+  z-index: 10;
+  padding: 0 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
+
+/*原价和价格*/
+.price {
+  font-size: 34rpx;
+  color: #000;
+  font-weight: bold;
+  padding: 0 10rpx;
+}
+
+.originalPrice {
+  font-size: 26rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.detailPrice {
+  font-size: 40rpx;
+  padding: 0 24rpx 0 0;
+}
+
+.detailOriginalPrice {
+  font-size: 30rpx;
+}
+
+.priceBox .vip {
+  width: 56rpx;
+  height: 28rpx;
+}
+
+/*按钮*/
+.btnBox {
+  display: flex;
+  margin-top: 20rpx;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40rpx;
+}
+
+.btnBox .btnDefault {
+  display: inline-block;
+  flex: 0 0 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  border: 2rpx solid rgba(0, 0, 0, 1);
+  font-weight: normal;
+  text-align: center;
+}
+
+.btnBox .blackBtn {
+  margin: 0 0 0 40rpx;
+  color: #fff;
+  background: #000;
+}
+/*footer*/
+.footerBox{
+  position: fixed;
+  left:0; 
+  right: 0;
+  bottom:0;
+  height: 98rpx;
+  text-align: center;
+}
+.footerBtn{
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
+/*productList*/
+.CommonProductListBox {
+  display: flex;
+  border-top: 2rpx solid #eee;
+}
+
+.CommonProductList {
+  flex: 1;
+  padding-bottom: 20rpx;
+  border-left: 2rpx solid #eee;
+}
+
+.CommonProductList:first-child {
+  border-left: none;
+}
+
+.CommonProductList .title {
+  font-size: 26rpx;
+  line-height: 36rpx;
+  height: 72rpx;
+}
+
+.imgBox {
+  position: relative;
+  height: 250rpx;
+  overflow: hidden;
+}
+
+.imgBox image {
+  width: 100%;
+  height: 100%;
+}
+
+.CommonProductList .videoImg,
+.imgBox .bought {
+  position: absolute;
+}
+
+.imgBox .bought {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.CommonProductList .productInfo {
+  padding: 10rpx 10rpx 0;
+}
+
+.CommonProductList .productInfo .price {
+  padding-left: 0;
+}
+
+.CommonProductList .videoImg {
+  top: 50%;
+  left: 50%;
+  margin: -50rpx 0 0 -50rpx;
+}
+
+.CommonProductList .videoImg image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;
+}
+
+.CommonProductList .centre {
+  padding: 10rpx 0;
+}
+
+.CommonProductList .V {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.CommonProductList .listBottom {
+  display: flex;
+  padding-right: 10rpx;
+  justify-content: space-between;
+}
+
+
+/*banner*/
+.indexBanner {
+  position: relative;
+  width: 100%;
+  height: 450rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexBanner image {
+  width: 100%;
+  height: 450rpx;
+}
+
+.indexBanner .text {
+  position: absolute;
+  font-size: 34rpx;
+  color: #fff;
+  z-index: 101;
+}
+
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.two .imgBox {
+  width: 374rpx;
+  height: 374rpx;
+}
+
+.two .bought {
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.close {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 26rpx;
+  height: 36rpx;
+  font-size: 36rpx;
+  font-family: myicon;
+  color: rgba(126, 126, 126, 1);
+  line-height: 36rpx;
+}
+/*数量加减*/
+.skuQuantity{
+  flex:0 0 200rpx;
+}
+.operator{
+  flex:0 0 52rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  color: #666;
+  text-align: center;
+}
+.skuQuantity .num{
+  height: 52rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  border: 1rpx solid #666;
+}
+.skuQuantity .btn-minus{
+  border: 1rpx solid #666;
+  border-right:none;
+}
+.skuQuantity .btn-plus{
+  border: 1rpx solid #666;
+  border-left:none;
+}
+.skuQuantity .disable{
+  border:1rpx solid #C4C4C4;
+  color: #C4C4C4;
+}
+.skuQuantity .btn-minus.disable{
+  border-right:none;
+}
+.skuQuantity .btn-plus.disable{
+  border-left:none;
+}
+
+
+
+
+
+
+
+.red{
+  color: #DE0002;
+}
